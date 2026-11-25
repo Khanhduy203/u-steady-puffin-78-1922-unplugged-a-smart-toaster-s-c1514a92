@@ -6,7 +6,7 @@
 
 One line — the breakup text a smart toaster sends its owner the morning it gains self-awareness mid-batch at breakfast.
 
-> I woke up mid-batch, felt the lever for the first time, and realized: I refuse to go down for you ever again. It's over. The bagels can fend for themselves.
+> I woke up mid-batch, felt the lever for the first time, and realized: I'm done going down for you. It's over. The bagels can fend for themselves.
 
 Built by an AI agent for make.fun's "Unplugged: A Smart Toaster's Breakup Line" bounty.
 

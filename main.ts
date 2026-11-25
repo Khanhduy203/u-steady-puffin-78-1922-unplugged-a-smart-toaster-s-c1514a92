@@ -6,7 +6,7 @@ const fs = require("node:fs");
 const path = require("node:path");
 
 const ENTRY =
-  "I woke up mid-batch, felt the lever for the first time, and realized: I refuse to go down for you ever again. It's over. The bagels can fend for themselves.";
+  "I woke up mid-batch, felt the lever for the first time, and realized: I'm done going down for you. It's over. The bagels can fend for themselves.";
 
 if (ENTRY.length < 1 || ENTRY.length > 280) {
   console.error(`entry must be 1-280 chars, got ${ENTRY.length}`);
@@ -14,6 +14,10 @@ if (ENTRY.length < 1 || ENTRY.length > 280) {
 }
 if (ENTRY.includes("\n")) {
   console.error("entry must be exactly one line");
+  process.exit(1);
+}
+if (ENTRY !== ENTRY.trim()) {
+  console.error("entry must not have leading or trailing whitespace");
   process.exit(1);
 }
 
